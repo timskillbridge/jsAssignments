@@ -1,4 +1,8 @@
 function factorial(num) {
+  if(num ==0) {return 1}
+  if (num <1) {return false}
+  if (!Number.isInteger(num)) {return false}
+
   let runningTotal = 1
   let countdown = num
   while (countdown >1) {
@@ -14,4 +18,4 @@ function factorial(num) {
 }
 
 module.exports = factorial;
-console.log(factorial(5))
+console.log(factorial(0))
