@@ -31,7 +31,7 @@ return output
 
 function toRoman(num) {
   let output = ""
-let romanNumeralPriorityOrder  = ["M","CM","D","CD","C","L","XL","X","V","IV","I"]
+let romanNumeralPriorityOrder  = ["M","CM","D","CD","C","XC","L","XL","X","IX","V","IV","I"]
 
 let romanNumeralToArabic  = {
 "I" : 1,
@@ -44,6 +44,7 @@ let romanNumeralToArabic  = {
 "IV" : 4,
 "IX" : 9,
 "XL" : 40,
+"XC" : 90,
 "CD" : 400,
 "CM" : 900
 }
@@ -66,5 +67,10 @@ return output
 
 module.exports = { toRoman, toRomanLazy };
 
-console.log(toRomanLazy(54))
+
+console.log(toRoman(3))
 console.log(toRoman(54))
+console.log(toRoman(33))
+console.log(toRoman(59))
+console.log(toRoman(510))
+console.log(toRoman(124))
