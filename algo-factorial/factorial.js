@@ -18,4 +18,4 @@ function factorial(num) {
 }
 
 module.exports = factorial;
-console.log(factorial(0))
+console.log(factorial(5))

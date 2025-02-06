@@ -41,7 +41,7 @@ let romanNumeralToArabic  = {
 "C" : 100,
 "D" : 500,
 "M" : 1000,
-"IV" : 4,localStorage
+"IV" : 4,
 "IX" : 9,
 "XL" : 40,
 "CD" : 400,
@@ -66,4 +66,5 @@ return output
 
 module.exports = { toRoman, toRomanLazy };
 
-console.log(toRomanLazy(19))
+console.log(toRomanLazy(54))
+console.log(toRoman(54))

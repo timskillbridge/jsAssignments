@@ -10,7 +10,7 @@ function fibonacci(num) {
   }
   return runningTotal
 }
-console.log(fibonacci(5))
+console.log(fibonacci(9))
 module.exports = fibonacci;
 
-//done
+//done1
